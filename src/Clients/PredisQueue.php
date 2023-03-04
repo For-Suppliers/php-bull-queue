@@ -17,6 +17,7 @@ class PredisQueue implements RedisQueue
             $this->client = $redis;
         } else {
             $this->client = new Redis([
+                'scheme' => $config->scheme,
                 'host' => $config->host,
                 'port' => $config->port,
                 'password' => $config->password,

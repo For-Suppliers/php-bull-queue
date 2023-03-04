@@ -6,6 +6,7 @@ namespace Ilzrv\PhpBullQueue\DTOs;
 
 class RedisConfig extends DataTransferObject
 {
+    public string $scheme = 'tcp';
     public string $client = 'phpredis';
     public string $host = '127.0.0.1';
     public int $port = 6379;
